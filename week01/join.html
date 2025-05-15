@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quito Chamber of Commerce</title>
+  <meta name="description" content="Quito's business resource center, offering information on local events and much more" />
+  <meta name="author" content="Josselyn Martinez" />
+  <link rel="stylesheet" href="./styles/join.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images/fluentbit.svg" alt="logo" />
+      <span>
+        Quito<br/>
+        <small>Chamber of Commerce</small>
+      </span>
+    </div>
+
+    <nav id="mainNav" class="nav-main nav-mobile">
+      <a href="commerce-site-plan.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html">Discover</a>
+    </nav>
+  </header>
+
+<main class="join-section">
+  <h1>Join the Quito Chamber of Commerce</h1>
+
+  <section class="join-benefits">
+    <h2>Why join?</h2>
+    <p>By becoming a member, you gain access to a community of entrepreneurs, professionals, and business leaders who are driving Quito's economic development.</p>
+    
+    <div class="membership-levels">
+      <div class="membership-card">
+        <h3>Non-Profit</h3>
+        <ul>
+          <li>Basic listing in the directory</li>
+          <li>Access to newsletters</li>
+          <li>Participation in community events</li>
+        </ul>
+      </div>
+      <div class="membership-card">
+        <h3>Silver Member</h3>
+        <ul>
+          <li>All the benefits of the previous level</li>
+          <li>Monthly trainings</li>
+          <li>Promotion on social networks</li>
+          <li>Quarterly networking lunches</li>
+        </ul>
+      </div>
+      <div class="membership-card">
+        <h3>Gold Member</h3>
+        <ul>
+          <li>All the benefits of Silver</li>
+          <li>Featured advertising on our website</li>
+          <li>Sponsorship opportunity at events</li>
+          <li>Exclusive access to export forums</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="join-form">
+    <h2>Application Form</h2>
+    <form>
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="business">Business / Organization Name</label>
+      <input type="text" id="business" name="business">
+
+      <label for="membership">Membership Level *</label>
+      <select id="membership" name="membership" required>
+        <option value="">Select an option</option>
+        <option value="nonprofit">Non-Profit</option>
+        <option value="silver">Silver Member</option>
+        <option value="gold">Gold Member</option>
+      </select>
+
+      <label for="message">Message (optional)</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-contact">
+      <strong>Quito Inc.,  Chamber of Commerce</strong><br />
+      327 Garcés Street, 5th Floor #1749, Jorge, MA 02116, quito<br />
+      info@quito/Ecuador.org<br />
+      (855) 968-3457
+    </div>
+
+    <div class="footer-social">
+      <a href="#"><img src="./images/youtube.svg" alt="YouTube" /></a>
+      <a href="#"><img src="./images/twitter.png" alt="Twitter" /></a>
+      <a href="#"><img src="./images/linkedin-sign.png" alt="LinkedIn" /></a>
+    </div>
+
+    <div class="footer-meta">
+      WDD231 Class Project | Quito Chamber of Commerce<br />
+      <span id="current_date"></span><br />
+      <span id="lastModified"></span>
+    </div>
+  </div>
+</footer>
+
+<script src="./scripts/commerce.js" defer></script>
+</body>
+
+</html>
+
