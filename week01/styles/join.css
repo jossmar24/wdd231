@@ -79,26 +79,26 @@
   .join-benefits h2,
   .join-form h2 {
     color: var(--accent-color);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   
   .membership-levels {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
   
   .membership-card {
     background-color: var(--neutral-color);
-    padding: 1rem;
+    padding: 2rem;
     border-left: 6px solid var(--primary-color);
-    border-radius: 8px;
+    border-radius: 10px;
   }
   
   .membership-card h3 {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
   }
   
   .membership-card ul {
@@ -192,7 +192,8 @@
       width: 100%;
       margin-top: 1rem;
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 10px;
     }
   

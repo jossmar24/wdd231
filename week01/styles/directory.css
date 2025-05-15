@@ -95,14 +95,14 @@ nav a:hover {
 }
 
 .directory-card {
-  background-color: #fff;
+  background-color: #c9cbced0;
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  max-width: 250px;
-  margin: 1rem;
+  width: 100%;
 }
+
 
 .directory-logo {
   width: 80px;
@@ -173,4 +173,77 @@ footer {
 .footer-social img:hover {
   filter: grayscale(0%);
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  nav a {
+    margin: 5px 10px;
+    font-size: 1rem;
+  }
+
+  .directory {
+    padding: 0 0.5rem;
+  }
+
+  .directory h1 {
+    font-size: 1.8rem;
+  }
+
+  .directory p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .directory-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .directory-card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .footer-contact,
+  .footer-meta {
+    max-width: 100%;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+  }
+
+  .footer-social img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 
