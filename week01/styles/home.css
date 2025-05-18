@@ -89,6 +89,7 @@ body {
 
   .hero button:hover {
     background-color: #585f74d0;
+    text-decoration: underline;
   }
   
   h1 {
@@ -163,10 +164,6 @@ body {
   .business-card a {
     color: #0066cc;
     text-decoration: none;
-  }
-  
-  .business-card a:hover {
-    text-decoration: underline;
   }
 
   .svg {

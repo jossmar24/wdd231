@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" 
+    content="Page development with previously acquired knowledge">
+    <meta name="author" content="Josselyn Martinez">
+    <link rel="stylesheet" href="./styles/page.css">
+    <script src="./scripts/page.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./images/me.jpg" alt="Josselyn Juleidy M." />
+        <h1>Josselyn Juleidy M.</h1>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Chamber</a>
+            <a href="">Final</a>
+            <a href="">GitHub Profile</a>
+            <a href="">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="cards">
+            <div class="card left-card">
+                <h2>Course Work</h2>
+                <ul>
+                    <li><a href="http://127.0.0.1:5501/temples.html#">Picture Album</a></li>
+                    <li><a href="http://127.0.0.1:5501/index.html">Dynamic Web Fundamentals</a></li>
+                    <li><a href="http://127.0.0.1:5501/filtered-temples.html#">Temple Album</a></li>
+                    <li><a href="http://127.0.0.1:5501/Cin%C3%A9ma-du-R%C3%A9el/index.html">Movies</a></li>
+                </ul>
+            </div>
+            <div class="card right-card">
+                <h2>Quito, Ecuador</h2>
+                <img src="./images/quito.jpg" alt="quito">
+                <p class="caption">Cotopaxi volcano</p>
+            </div>
+        </section>
+        <section class="certificates">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div id="course-list" class="courses">
+                <button class="cse">CSE 110</button>
+                <button class="wdd">WDD 130</button>
+                <button class="cse">CSE 111</button>
+                <button class="cse">CSE 210</button>
+                <button class="wdd">WDD 131</button>
+                <button class="wdd">WDD 231</button>
+            </div>
+            <p><strong>Total Credits:</strong> <span id="total-credits">0</span></p>
+        </section>
+    </main>
+    <footer>
+        <p id="year"></p>
+        <p id="lastModify"></p>
+    </footer>
+</body>
+</html>
