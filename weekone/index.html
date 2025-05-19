@@ -14,12 +14,13 @@
     <header>
         <img src="./images/me.jpg" alt="Josselyn Juleidy M." />
         <h1>Josselyn Juleidy M.</h1>
+        <button class="menu-toggle" aria-label="Toggle menu"></button>
         <nav>
-            <a href="">Home</a>
+            <a href="http://127.0.0.1:5500/weekone/index.html" target="_blank">Home</a>
             <a href="">Chamber</a>
             <a href="">Final</a>
-            <a href="">GitHub Profile</a>
-            <a href="">LinkedIn</a>
+            <a href="https://github.com/" target="_blank">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/josselyn-martinez-6b7466329/" target="_blank">LinkedIn</a>
         </nav>
     </header>
     <main>
@@ -28,9 +29,9 @@
             <div class="card left-card">
                 <h2>Course Work</h2>
                 <ul>
-                    <li><a href="http://127.0.0.1:5501/temples.html#">Picture Album</a></li>
+                    <li><a href="http://127.0.0.1:5501/filtered-temples.html" target="_blank">Picture Album</a></li>
                     <li><a href="http://127.0.0.1:5501/index.html">Dynamic Web Fundamentals</a></li>
-                    <li><a href="http://127.0.0.1:5501/filtered-temples.html#">Temple Album</a></li>
+                    <li><a href="http://127.0.0.1:5501/temples.html">Temple Album</a></li>
                     <li><a href="http://127.0.0.1:5501/Cin%C3%A9ma-du-R%C3%A9el/index.html">Movies</a></li>
                 </ul>
             </div>
@@ -43,9 +44,9 @@
         <section class="certificates">
             <h2>Web and Computer Programming Certificate</h2>
             <div class="filter-buttons">
-                <button>All</button>
-                <button>CSE</button>
-                <button>WDD</button>
+                <button data-filter="All">All</button>
+                <button data-filter="CSE">CSE</button>
+                <button data-filter="WDD">WDD</button>
             </div>
             <div id="course-list" class="courses">
                 <button class="cse">CSE 110</button>
@@ -62,5 +63,16 @@
         <p id="year"></p>
         <p id="lastModify"></p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("nav");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggle.classList.toggle("open");
+  });
+});
+    </script>
 </body>
 </html>

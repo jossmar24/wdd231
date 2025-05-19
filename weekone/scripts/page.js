@@ -46,5 +46,8 @@ document.querySelectorAll(".filter-buttons button").forEach(button => {
     renderCourses(button.dataset.filter);
   });
 });
-renderCourses();
+renderCourses(button.dataset.filter);
+
+
+
 
