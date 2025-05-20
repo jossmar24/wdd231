@@ -1,0 +1,23 @@
+{
+    "family_name": " Martinez",
+    "date": "2023-06-12",
+    "number": "3",
+    "visited": "False",
+    "family_members": [
+    {
+      "name": "Manuel",
+      "gender": "Male",
+      "birthdate": "1981-10-09"
+    },
+    {
+      "name": "Joseph",
+      "gender": "Male",
+      "birthdate": "2003-06-28"
+    },
+    {
+      "name": "Yexica",
+      "gender": "Female",
+      "birthdate": "1990-04-02"
+    }
+  ]
+}
