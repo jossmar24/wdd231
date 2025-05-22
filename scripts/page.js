@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   const yearEl = document.querySelector("#year");
   const lastModifyEl = document.querySelector("#lastModify");
   const currentDate = new Date();
@@ -13,21 +12,21 @@ document.addEventListener("DOMContentLoaded", () => {
     lastModifyEl.innerHTML = `<span>Last Modification: ${lastModified}</span>`;
   }
 
+  // Menú responsive
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector("nav");
 
   if (toggle && nav) {
     toggle.setAttribute("aria-expanded", "false");
-    toggle.setAttribute("aria-label", "Toggle navigation menu");
-
     toggle.addEventListener("click", () => {
       const isOpen = nav.classList.toggle("active");
       toggle.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", isOpen);
+      toggle.setAttribute("aria-expanded", isOpen.toString());
     });
   }
 
-  const courses = [ 
+  // Datos de cursos
+  const courses = [
     { name: "CSE 110", type: "CSE", credits: 3, completed: true },
     { name: "CSE 111", type: "CSE", credits: 4, completed: true },
     { name: "WDD 130", type: "WDD", credits: 3, completed: false },
@@ -48,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     filtered.forEach(course => {
       const btn = document.createElement("button");
       btn.textContent = course.name;
-      btn.className = course.type.toLowerCase();
+      btn.className = `${course.type.toLowerCase()}`;
       btn.dataset.credits = course.credits;
       btn.setAttribute("aria-pressed", "false");
       btn.setAttribute("aria-label", `Toggle selection for ${course.name}`);
@@ -90,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderCourses();
 });
+
 
 
 

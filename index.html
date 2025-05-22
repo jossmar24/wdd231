@@ -13,10 +13,12 @@
 </head>
 <body>
     <header>
-        <img src="./images/me.jpg" alt="Josselyn Juleidy M." />
+        <img src="./images/me.jpg" alt="Portrait of Josselyn Juleidy M." />
         <h1>Josselyn Juleidy M.</h1>
-        <button class="menu-toggle" aria-label="Toggle menu"></button>
-        <nav>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="sr-only">Toggle menu</span>
+        </button>
+        <nav role="navigation" aria-label="Main Navigation">
             <a href="./index.html" target="_blank">Home</a>
             <a href="">Chamber</a>
             <a href="">Final</a>
@@ -38,7 +40,7 @@
             </div>
             <div class="card right-card">
                 <h2>Quito, Ecuador</h2>
-                <img src="./images/quito.jpg" alt="quito">
+                <img src="./images/quito.jpg" alt="View of the Cotopaxi volcano in Quito, Ecuador">
                 <p class="caption">Cotopaxi volcano</p>
             </div>
         </section>
@@ -50,12 +52,6 @@
                 <button data-filter="WDD">WDD</button>
             </div>
             <div id="course-list" class="courses">
-                <button class="cse">CSE 110</button>
-                <button class="wdd">WDD 130</button>
-                <button class="cse">CSE 111</button>
-                <button class="cse">CSE 210</button>
-                <button class="wdd">WDD 131</button>
-                <button class="wdd">WDD 231</button>
             </div>
             <p><strong>Total Credits:</strong> <span id="total-credits">0</span></p>
         </section>
